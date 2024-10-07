@@ -1,0 +1,559 @@
+:root {
+  /* font */
+  --font-euclid: "Euclid Circular A";
+  --font-fahkwang: "Fahkwang";
+
+  /* color */
+  --black: #0000;
+  --white: #ffffff;
+  --white-smok: #f3f9f3;
+  --light-black: #171f31;
+  --dark-black: #13131b;
+  --skyblue: #168ecc;
+  --blue: #1f308c;
+  --dark-blue: #001d60;
+  --light-blue: #53648c;
+  --purple: #1e338f;
+
+  --gray: #eeeff3;
+  --dark-gray: #4e5567;
+  --light-gray: #82838d;
+  --text-gray: #928089;
+  --text-lightgray: #828ba3;
+  --orange: #f1ab24;
+  --blue: #020714;
+  --light-blue: #4e5567;
+  --dark-blue: #171f31;
+
+  --ref-back: rgba(130, 139, 163, 0.1);
+  --tag-background: #f3f4f6;
+  --separator: #eff0f2;
+  --group-head-background: rgba(130, 139, 163, 0.1);
+
+  /* link color*/
+  --link: #0a58ca;
+  --link-hover: #f1ab24;
+
+  --gradientBlue: linear-gradient(112.94deg, #168ecc 0.86%, #1f308c 95.15%);
+  --gradientWhite: linear-gradient(281.4deg, #c1eaff -5.18%, #ffffff 99.37%);
+  --primarytextgradient: linear-gradient(281.71deg,
+      #020714 2.61%,
+      #243660 110.37%);
+  --textaboutgradient: linear-gradient(94.6deg, #31146d 7.82%, #00450b 87.73%);
+  --titlegradient: linear-gradient(281.71deg, #001d60 2.61%, #53648c 109.81%);
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: var(--font-euclid);
+  line-height: 1.3;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* font */
+.font-euclid {
+  font-family: var(--font-euclid);
+}
+
+.font-fahkwang {
+  font-family: var(--font-fahkwang);
+}
+
+/* text color*/
+
+.gradientBlue {
+  background: var(--gradientBlue);
+}
+
+.gradientWhite {
+  background: var(--gradientWhite);
+}
+
+.primarytextgradient {
+  background: var(--primarytextgradient);
+}
+
+.titlegradient {
+  background: var(--titlegradient);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.aboutext {
+  background: var(--textaboutgradient);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.primary-text {
+  color: var(--dark-black);
+}
+
+.secondary-text {
+  color: var(--text-lightgray);
+}
+
+.orange {
+  color: var(--orange);
+}
+
+.white-smok {
+  color: var(--white-smok);
+}
+
+.black {
+  color: var(--black);
+}
+
+.white {
+  color: var(--white);
+}
+
+.text-gray {
+  color: var(--text-gray);
+}
+
+.text-lightgray {
+  color: var(--text-lightgray);
+}
+
+.dark-gray {
+  color: var(--dark-gray);
+}
+
+.light-black {
+  color: var(--light-black);
+}
+
+/*background color*/
+
+.bg-orange {
+  background-color: var(--orange);
+}
+
+.bg-purple {
+  background-color: var(--purple);
+}
+
+.bg-lightgray {
+  background-color: var(--text-lightgray);
+}
+
+.bg-gray {
+  background-color: var(--gray);
+}
+
+.tag-background {
+  background-color: var(--tag-background);
+}
+
+.separator-background {
+  background-color: var(--separator);
+}
+
+.group-head-background {
+  background-color: var(--group-head-background);
+}
+
+.sep-border {
+  border-bottom: 1px solid #eff0f2;
+}
+
+/* line-height start */
+.line-height-45 {
+  line-height: 45px;
+}
+
+.line-height-35 {
+  line-height: 35px;
+}
+
+.line-height-25 {
+  line-height: 25px;
+}
+
+.line-height-30 {
+  line-height: 30px;
+}
+
+/* line-height end */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0;
+}
+
+.h1,
+h1 {
+  font-size: 8rem;
+  line-height: 1.25;
+}
+
+.h2,
+h2 {
+  font-size: 6rem;
+  line-height: 1.3;
+}
+
+.h2.small,
+h2.small {
+  font-size: 5rem;
+  line-height: 1.3;
+}
+
+h3,
+.h3 {
+  font-size: 4.5rem;
+  line-height: 1.3;
+}
+
+h3.small,
+.h3.small {
+  font-size: 4rem;
+  line-height: 1.75;
+}
+
+h4.big,
+.h4.big {
+  font-size: 3.5rem;
+}
+
+.h4,
+h4 {
+  font-size: 3rem;
+  line-height: 2;
+}
+
+h4.small,
+.h4.small {
+  font-size: 25px;
+  line-height: 1.8;
+}
+
+.h5,
+h5 {
+  font-size: 24px;
+  line-height: 1.1;
+}
+
+h5.small,
+.h5.small {
+  font-size: 22px;
+  line-height: 1.25;
+}
+
+.h6,
+h6 {
+  font-size: 20px;
+  line-height: 1.75;
+}
+
+.p,
+p {
+  font-size: 18px;
+  line-height: 1.27;
+}
+
+.page-title-label {
+  font-size: 16px;
+  line-height: 1.49;
+}
+
+/* p.small,
+.p.small {
+  font-size: 16px;
+} */
+
+.small-content {
+  font-size: 12px;
+  line-height: 2.1;
+}
+
+.small-head {
+  font-size: 14px;
+  line-height: 1.27;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-200 {
+  font-weight: 200;
+}
+
+.custom-btn {
+  border: 1px solid transparent;
+  color: var(--white);
+  font-size: 20px;
+  line-height: 1.3;
+  padding: 15px 50px;
+  font-weight: 400;
+  transition: 0.3s all;
+  border-radius: unset;
+  text-align: center;
+  display: inline-block;
+}
+
+.reset-btn {
+  font-size: 16px;
+  padding: 14px 23px;
+}
+
+.orange-btn {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.orange-btn:hover {
+  background-color: #da950c;
+  color: var(--white);
+}
+
+.orange-btn:active {
+  background-color: #cb8b0b;
+  color: var(--white);
+}
+
+.transparent-btn {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid var(--white);
+  color: var(--white);
+}
+
+.transparent-btn:hover {
+  background: rgba(255, 255, 255, 0.4);
+  color: var(--white);
+}
+
+.transparent-btn:active {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* space*/
+.space {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.space-120 {
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+}
+
+.space-75 {
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+}
+
+.mrBottom-40 {
+  margin-bottom: 4rem;
+}
+
+.mrBottom-50 {
+  margin-bottom: 5rem;
+}
+
+/* max width*/
+.mw-745 {
+  max-width: 745px;
+}
+
+.mw-670 {
+  max-width: 670px;
+}
+
+.mw-713 {
+  max-width: 713px;
+}
+
+.mw-450 {
+  max-width: 450px;
+}
+
+/* list */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* input */
+.primary-input {
+  font-size: 16px;
+  font-weight: 400;
+  width: 100%;
+  color: var(--white);
+  background-color: transparent;
+  padding: 20px 15px 20px 45px;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 100%;
+  border: 1px solid transparent;
+}
+
+.primary-input:focus-visible {
+  border: 1px solid var(--white);
+  outline-offset: 0px;
+  outline: none;
+}
+
+.primary-input:active {
+  border: 1px solid var(--white);
+  outline-offset: 0px;
+  outline: none;
+}
+
+::placeholder {
+  color: var(--white);
+  opacity: 1;
+  /* Firefox */
+}
+
+.search-input::placeholder {
+  color: var(--text-lightgray);
+  opacity: 1;
+}
+
+@font-face {
+  font-family: "Fahkwang";
+  src: url("../fonts/Fahkwang-Medium.woff2") format("woff2"),
+    url("../fonts/Fahkwang-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fahkwang";
+  src: url("../fonts/Fahkwang-Bold.woff2") format("woff2"),
+    url("../fonts/Fahkwang-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Euclid Circular A";
+  src: url("../fonts/EuclidCircularA-Regular.woff2") format("woff2"),
+    url("../fonts/EuclidCircularA-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fahkwang";
+  src: url("../fonts/Fahkwang-Light.woff2") format("woff2"),
+    url("../fonts/Fahkwang-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Euclid Circular A";
+  src: url("../fonts/EuclidCircularA-SemiBold.woff2") format("woff2"),
+    url("../fonts/EuclidCircularA-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fahkwang";
+  src: url("../fonts/Fahkwang-ExtraLight.woff2") format("woff2"),
+    url("../fonts/Fahkwang-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fahkwang";
+  src: url("../fonts/Fahkwang-SemiBold.woff2") format("woff2"),
+    url("../fonts/Fahkwang-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Euclid Circular A";
+  src: url("../fonts/EuclidCircularA-Bold.woff2") format("woff2"),
+    url("../fonts/EuclidCircularA-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fahkwang";
+  src: url("../fonts/Fahkwang-Regular.woff2") format("woff2"),
+    url("../fonts/Fahkwang-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Euclid Circular A";
+  src: url("../fonts/EuclidCircularA-Light.woff2") format("woff2"),
+    url("../fonts/EuclidCircularA-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Euclid Circular A";
+  src: url("../fonts/EuclidCircularA-Medium.woff2") format("woff2"),
+    url("../fonts/EuclidCircularA-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+.container {
+  padding: 0 15px;
+}
+
+html.show-menu {
+  overflow: hidden;
+}
+
+html.show-menu body {
+  overflow: hidden;
+  height: 100%;
+}
+
+.header-spacing {
+  margin-top: 100px;
+}
